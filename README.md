@@ -1,27 +1,88 @@
-# IniciePokemon
+# Inicie Pokemon
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.2.
+Projeto teste para a vaga de Desenvolvedor Front-end Sênior da Inicie Educação.
 
-## Development server
+[![Inicie Educação](https://inicie.digital/wp-content/uploads/2022/02/Group-1699-1.png)](https://inicie.digital/sobre-nos/)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Iniciar o projeto
 
-## Code scaffolding
+Para iniciar o projeto, você deve:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Clonar o projeto;
+- Instalar os pacotes com o seu gerenciador de pacotes favorito (Ex: yarn, rnpm ou npm)
+- Executar o script de iniciação com o seu gerenciador de pacote
+- E acessar URL do servidor local
 
-## Build
+#### Exemplo:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+##### Clonando
 
-## Running unit tests
+```cmd 
+git clone git@github.com:dbrazl/inicie-pokemon.git
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+##### Instalando pacotes
 
-## Running end-to-end tests
+```cmd
+yarn
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+##### Inciando o projeto
 
-## Further help
+```cmd
+yarn start
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+##### Acessando a URL do servidor local
+
+![Log do servidor web](https://github.com/dbrazl/inicie-pokemon/assets/52254578/800abcbc-f390-416f-b8cd-2560f54b463f)
+
+## Testes automatizados
+
+Para iniciar a bateria de testes e verificar o log de testes, você deve:
+
+- Executar o script de testes
+- Verificar o log de testes na página do karma que abrirá automaticamente
+
+#### Exemplo:
+
+##### Rodando testes
+
+```cmd 
+yarn test
+```
+
+##### Verificar log
+
+![Página do Karma](https://github.com/dbrazl/inicie-pokemon/assets/52254578/5f28adc8-1091-4866-ade7-5bd101140965)
+
+## Cobertura de testes
+
+Para verificar a cobertura de teste, você deve:
+
+- Executar o script de cobertura de testes
+- Verificar a cobertura de testes na página que se abrirá automaticamente
+
+#### Exemplo:
+
+##### Executar script de cobertura
+
+```cmd 
+yarn coverage
+```
+
+##### Verificar cobertura de testes
+
+![Página de cobertura de testes](https://github.com/dbrazl/inicie-pokemon/assets/52254578/8d165930-7bbd-4e86-8eb0-3a1f2917b9bc)
+
+A cobertura de testes é atualizada automaticamente ao ser incluso novos testes enquanto os testes automatizados estiverem rodando.
+
+## Contribuidores
+
+#### Desenvolvedor
+<a href="https://github.com/dbrazl" style="text-decoration: none; display:  color: black;">
+  <img src="https://github.com/dbrazl.png" width="150px" height="150px" alt="Daniel Braz" />
+</a>
+
+[Daniel Braz](https://github.com/dbrazl)
+
