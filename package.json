@@ -5,8 +5,9 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "watch": "ng build --watch --code-coverage --configuration development",
+    "test": "ng test",
+    "coverage": "ng test --no-watch && watch-http-server ./coverage/inicie-pokemon -o -s"
   },
   "private": true,
   "dependencies": {
@@ -33,6 +34,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
-    "typescript": "~5.0.2"
+    "typescript": "~5.0.2",
+    "watch-http-server": "^0.7.6"
   }
 }
