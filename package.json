@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --code-coverage --configuration development",
     "test": "ng test",
-    "coverage": "ng test --no-watch && watch-http-server ./coverage/inicie-pokemon -o -s"
+    "coverage": "ng test --no-watch | watch-http-server ./coverage/inicie-pokemon -o -s"
   },
   "private": true,
   "dependencies": {
@@ -27,7 +27,9 @@
     "@angular-devkit/build-angular": "^16.0.2",
     "@angular/cli": "~16.0.2",
     "@angular/compiler-cli": "^16.0.0",
+    "@testing-library/jasmine-dom": "^1.3.3",
     "@types/jasmine": "~4.3.0",
+    "@types/testing-library__jasmine-dom": "^1.3.0",
     "jasmine-core": "~4.6.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
