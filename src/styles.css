@@ -8,20 +8,25 @@
   padding: 0;
   box-sizing: border-box;
 
-  --white: #ffffff;
+  --white-1: #ffffff;
+  --white-2: #F8F8F8;
   --black: #000000;
   --grey: #9BA4B5;
   --blue-color-1: #2F3E77;
   --blue-color-2: #233674;
   --primary-color: #EA686D;
 
-  --input-bg-color: var(--white);
+  --input-bg-color: var(--white-1);
   --input-text-color: var(--black);
   --input-placeholder-color: var(--grey);
-  --button-text-color: var(--white);
+  --button-text-color: var(--white-1);
 
-  --pokemon-card-bg: var(--white);
+  --pokemon-card-bg: var(--white-1);
   --pokemon-title-color: var(--blue-color-2);
   --pokemon-info-color: var(--blue-color-2);
   --pokemon-label-color: var(--blue-color-2);
+}
+
+body {
+  background-color: var(--white-2);
 }

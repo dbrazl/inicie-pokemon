@@ -3,6 +3,7 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 import { SearchInputComponent } from './search-input/search-input.component';
 import { PokemonCardComponent } from './pokemon-card/pokemon-card.component';
+import { PokemonSliderComponent } from './pokemon-slider/pokemon-slider.component';
 
 describe('HomeComponent', () => {
   let component: AppComponent;
@@ -10,12 +11,15 @@ describe('HomeComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [RouterTestingModule],
+      imports: [
+        RouterTestingModule,
+        PokemonCardComponent,
+        PokemonSliderComponent
+      ],
       declarations: [
         AppComponent,
         SearchInputComponent,
-        PokemonCardComponent
-      ]
+      ],
     });
     fixture = TestBed.createComponent(AppComponent);
     component = fixture.componentInstance;
@@ -45,5 +49,15 @@ describe('HomeComponent', () => {
   it('should have a input to search pokemons', () => {
     const inputContainer: HTMLDivElement = fixture.nativeElement.querySelector('#search-input');
     expect(inputContainer).toBeTruthy();
+  })
+
+  it('should have a pokemon slider', () => {
+    const pokemonsSlider: HTMLElement = fixture.nativeElement.querySelector('#pokemon-slider');
+    expect(pokemonsSlider).toBeTruthy();
+  })
+
+  it('should have a laptop banner', () => {
+    const laptopBanner: HTMLImageElement = fixture.nativeElement.querySelector('#laptop-banner');
+    expect(laptopBanner).toBeTruthy();
   })
 });

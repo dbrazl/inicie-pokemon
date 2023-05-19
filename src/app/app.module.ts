@@ -5,16 +5,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SearchInputComponent } from './search-input/search-input.component';
 import { PokemonCardComponent } from './pokemon-card/pokemon-card.component';
+import { PokemonSliderComponent } from './pokemon-slider/pokemon-slider.component';
+
+import { register } from 'swiper/element/bundle';
+register();
 
 @NgModule({
   declarations: [
     AppComponent,
     SearchInputComponent,
-    PokemonCardComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    PokemonSliderComponent,
+    PokemonCardComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]
