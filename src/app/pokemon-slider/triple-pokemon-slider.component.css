@@ -1,5 +1,4 @@
 .container {
-  position: relative;
   width: 100%;
 }
 
@@ -7,12 +6,15 @@ swiper-container {
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
-  position: relative;
 }
 
 swiper-slide {
   opacity: 0;
   transition: opacity 200ms ease;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 swiper-slide img {
@@ -22,6 +24,10 @@ swiper-slide img {
 
 swiper-slide button {
   display: none;
+}
+
+.slide {
+  position: relative;
 }
 
 .swiper-slide-active {
@@ -47,6 +53,7 @@ swiper-slide button {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .previous-button {

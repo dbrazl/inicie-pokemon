@@ -12,26 +12,27 @@
     coverflow-effect-scale="0.8"
     coverflow-effect-modifier="1"
     coverflow-effect-slide-shadows="false"
-    space-between="10"
     initial-slide="1"
     autoplay-delay="2500"
   >
     <swiper-slide id="pokemon" *ngFor="let pokemon of pokemons">
-      <button id="previous-button" class="button previous-button" (click)="prevSlide()">
-        <img src="assets/arrow.svg" alt="Pokemon anterior" class="icon">
-      </button>
+      <div class="slide">
+        <button id="previous-button" class="button previous-button" (click)="prevSlide()">
+          <img src="assets/arrow.svg" alt="Pokemon anterior" class="icon">
+        </button>
 
-      <app-pokemon-card
-        [name]="pokemon.name"
-        [code]="pokemon.code"
-        [image]="pokemon.image"
-        [height]="pokemon.height"
-        [weight]="pokemon.weight"
-      ></app-pokemon-card>
+        <app-pokemon-card
+          [name]="pokemon.name"
+          [code]="pokemon.code"
+          [image]="pokemon.image"
+          [height]="pokemon.height"
+          [weight]="pokemon.weight"
+        ></app-pokemon-card>
 
-      <button id="next-button" class="button next-button" (click)="nextSlide()">
-        <img src="assets/arrow.svg" alt="Próximo Pokemon" class="icon">
-      </button>
+        <button id="next-button" class="button next-button" (click)="nextSlide()">
+          <img src="assets/arrow.svg" alt="Próximo Pokemon" class="icon">
+        </button>
+      </div>
     </swiper-slide>
   </swiper-container>
 </div>
