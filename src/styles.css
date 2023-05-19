@@ -7,6 +7,12 @@
   margin: 0;
   padding: 0;
 
+  --white: #ffffff;
+  --black: #000000;
   --blue-color-1: #2F3E77;
   --primary-color: #EA686D;
+
+  --input-bg-color: var(--white);
+  --input-text-color: var(--black);
+  --button-text-color: var(--white);
 }

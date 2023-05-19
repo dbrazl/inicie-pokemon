@@ -1,15 +1,19 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { SearchInputComponent } from './search-input/search-input.component';
 
-describe('Home Component', () => {
+describe('HomeComponent', () => {
   let component: AppComponent;
   let fixture: ComponentFixture<AppComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
       imports: [RouterTestingModule],
-      declarations: [AppComponent]
+      declarations: [
+        AppComponent,
+        SearchInputComponent
+      ]
     });
     fixture = TestBed.createComponent(AppComponent);
     component = fixture.componentInstance;
@@ -37,7 +41,7 @@ describe('Home Component', () => {
   })
 
   it('should have a input to search pokemons', () => {
-    const inputContainer: HTMLDivElement = fixture.nativeElement.querySelector('div#search-input-container');
+    const inputContainer: HTMLDivElement = fixture.nativeElement.querySelector('#search-input');
     expect(inputContainer).toBeTruthy();
   })
 });
