@@ -151,3 +151,13 @@
   }
 }
 
+.mobile-pokemons-slider-container {
+  width: 100%;
+  height: 328.5px;
+}
+
+@media(min-width: 1440px) {
+  .mobile-pokemons-slider-container {
+    display: none;
+  }
+}

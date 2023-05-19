@@ -3,7 +3,7 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 import { SearchInputComponent } from './search-input/search-input.component';
 import { PokemonCardComponent } from './pokemon-card/pokemon-card.component';
-import { TriplePokemonSliderComponent } from './pokemon-slider/triple-pokemon-slider.component';
+import { TriplePokemonSliderComponent } from './triple-pokemon-slider/triple-pokemon-slider.component';
 
 describe('HomeComponent', () => {
   let component: AppComponent;

@@ -5,9 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SearchInputComponent } from './search-input/search-input.component';
 import { PokemonCardComponent } from './pokemon-card/pokemon-card.component';
-import { TriplePokemonSliderComponent } from './pokemon-slider/triple-pokemon-slider.component';
+import { TriplePokemonSliderComponent } from './triple-pokemon-slider/triple-pokemon-slider.component';
 
 import { register } from 'swiper/element/bundle';
+import { SimplePokemonSliderComponent } from './simple-pokemon-slider/simple-pokemon-slider.component';
 register();
 
 @NgModule({
@@ -20,6 +21,7 @@ register();
     AppRoutingModule,
     TriplePokemonSliderComponent,
     PokemonCardComponent,
+    SimplePokemonSliderComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,32 @@
+<div class="container">
+  <swiper-container
+    class="mySwiper"
+    pagination="false"
+    grab-cursor="true"
+    centered-slides="true"
+    slides-per-view="1"
+    initial-slide="1"
+    autoplay-delay="2500"
+  >
+    <swiper-slide id="pokemon" *ngFor="let pokemon of pokemons">
+      <div class="slide">
+        <button id="previous-button" class="button previous-button" (click)="prevSlide()">
+          <img src="assets/arrow.svg" alt="Pokemon anterior" class="icon">
+        </button>
+
+        <app-pokemon-card
+          [name]="pokemon.name"
+          [code]="pokemon.code"
+          [image]="pokemon.image"
+          [height]="pokemon.height"
+          [weight]="pokemon.weight"
+        ></app-pokemon-card>
+
+        <button id="next-button" class="button next-button" (click)="nextSlide()">
+          <img src="assets/arrow.svg" alt="Próximo Pokemon" class="icon">
+        </button>
+      </div>
+    </swiper-slide>
+  </swiper-container>
+</div>
+
