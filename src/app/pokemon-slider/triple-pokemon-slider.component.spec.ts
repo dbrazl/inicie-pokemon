@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PokemonSliderComponent } from './pokemon-slider.component';
+import { TriplePokemonSliderComponent } from './triple-pokemon-slider.component';
 
-describe('PokemonSliderComponent', () => {
-  let component: PokemonSliderComponent;
-  let fixture: ComponentFixture<PokemonSliderComponent>;
+describe('TriplePokemonSliderComponent', () => {
+  let component: TriplePokemonSliderComponent;
+  let fixture: ComponentFixture<TriplePokemonSliderComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [PokemonSliderComponent]
+      imports: [TriplePokemonSliderComponent]
     });
-    fixture = TestBed.createComponent(PokemonSliderComponent);
+    fixture = TestBed.createComponent(TriplePokemonSliderComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
