@@ -2,6 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 import { SearchInputComponent } from './search-input/search-input.component';
+import { PokemonCardComponent } from './pokemon-card/pokemon-card.component';
 
 describe('HomeComponent', () => {
   let component: AppComponent;
@@ -12,7 +13,8 @@ describe('HomeComponent', () => {
       imports: [RouterTestingModule],
       declarations: [
         AppComponent,
-        SearchInputComponent
+        SearchInputComponent,
+        PokemonCardComponent
       ]
     });
     fixture = TestBed.createComponent(AppComponent);

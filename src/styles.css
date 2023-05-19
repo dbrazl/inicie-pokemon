@@ -12,10 +12,16 @@
   --black: #000000;
   --grey: #9BA4B5;
   --blue-color-1: #2F3E77;
+  --blue-color-2: #233674;
   --primary-color: #EA686D;
 
   --input-bg-color: var(--white);
   --input-text-color: var(--black);
   --input-placeholder-color: var(--grey);
   --button-text-color: var(--white);
+
+  --pokemon-card-bg: var(--white);
+  --pokemon-title-color: var(--blue-color-2);
+  --pokemon-info-color: var(--blue-color-2);
+  --pokemon-label-color: var(--blue-color-2);
 }
