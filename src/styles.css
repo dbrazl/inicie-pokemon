@@ -31,9 +31,9 @@ body {
   background-color: var(--white-2);
 }
 
-@media(min-width: 1250px) {
+@media(min-width: 1440px) {
   body {
-    width: 1402px;
+    width: 1440px;
     margin: 0 auto;
   }
 }
