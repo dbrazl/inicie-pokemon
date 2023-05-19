@@ -30,3 +30,11 @@
 body {
   background-color: var(--white-2);
 }
+
+@media(min-width: 1250px) {
+  body {
+    width: 1402px;
+    margin: 0 auto;
+  }
+}
+
