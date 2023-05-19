@@ -16,6 +16,15 @@
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  padding-left: 10px;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.search-input::placeholder {
+  color: var(--input-placeholder-color);
 }
 
 .input-search-button {
