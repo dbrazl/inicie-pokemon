@@ -23,7 +23,7 @@
     initial-slide="0"
   >
     <swiper-slide id="pokemon" *ngFor="let pokemon of pokemons">
-      <div class="slide">
+      <a [routerLink]="['/pokemon', pokemon.code]" class="slide">
         <app-pokemon-card
           [name]="pokemon.name"
           [code]="pokemon.code"
@@ -32,7 +32,7 @@
           [weight]="pokemon.weight"
           [alwaysSmall]="true"
         ></app-pokemon-card>
-      </div>
+      </a>
     </swiper-slide>
   </swiper-container>
 
@@ -46,7 +46,7 @@
     initial-slide="0"
   >
     <swiper-slide id="pokemon" *ngFor="let pokemon of pokemons">
-      <div class="slide">
+      <a [routerLink]="['/pokemon', pokemon.code]" class="slide">
         <app-pokemon-card
           [name]="pokemon.name"
           [code]="pokemon.code"
@@ -55,7 +55,7 @@
           [weight]="pokemon.weight"
           [alwaysSmall]="true"
         ></app-pokemon-card>
-      </div>
+      </a>
     </swiper-slide>
   </swiper-container>
 </div>

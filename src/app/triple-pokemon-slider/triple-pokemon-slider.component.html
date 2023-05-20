@@ -17,7 +17,7 @@
     autoplay-delay="2500"
   >
     <swiper-slide id="pokemon" *ngFor="let pokemon of pokemons">
-      <div class="slide">
+      <a [routerLink]="['/pokemon', pokemon.code]" class="slide">
         <button id="previous-button" class="button previous-button" (click)="prevSlide()">
           <img src="assets/arrow.svg" alt="Pokemon anterior" class="icon">
         </button>
@@ -33,7 +33,7 @@
         <button id="next-button" class="button next-button" (click)="nextSlide()">
           <img src="assets/arrow.svg" alt="Próximo Pokemon" class="icon">
         </button>
-      </div>
+      </a>
     </swiper-slide>
   </swiper-container>
 </div>

@@ -26,6 +26,7 @@ swiper-slide button {
 
 .slide {
   position: relative;
+  text-decoration: none;
 }
 
 .swiper-slide-active {

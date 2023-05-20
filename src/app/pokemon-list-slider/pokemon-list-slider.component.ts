@@ -3,7 +3,7 @@ import { PokemonCardComponent } from '../pokemon-card/pokemon-card.component';
 import { NgFor, NgIf } from '@angular/common';
 import { TOP_10_POKEMONS } from 'src/mocks/top10Pokemons';
 import { IPokemon } from 'src/models/Pokemon';
-import { SwiperContainer } from 'swiper/element';
+import { RouterModule } from '@angular/router';
 
 @Component({
   standalone: true,
@@ -14,7 +14,8 @@ import { SwiperContainer } from 'swiper/element';
   imports: [
     PokemonCardComponent,
     NgFor,
-    NgIf
+    NgIf,
+    RouterModule
   ]
 })
 export class PokemonListSliderComponent implements OnInit {

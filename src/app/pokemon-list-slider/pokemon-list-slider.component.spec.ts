@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { RouterTestingModule } from '@angular/router/testing';
 
 import { PokemonListSliderComponent } from './pokemon-list-slider.component';
 
@@ -8,7 +9,10 @@ describe('PokemonListSliderComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [PokemonListSliderComponent]
+      imports: [
+        RouterTestingModule,
+        PokemonListSliderComponent
+      ]
     });
     fixture = TestBed.createComponent(PokemonListSliderComponent);
     component = fixture.componentInstance;

@@ -3,6 +3,7 @@ import { TOP_10_POKEMONS } from 'src/mocks/top10Pokemons';
 import { IPokemon } from 'src/models/Pokemon';
 import { PokemonCardComponent } from '../pokemon-card/pokemon-card.component';
 import { NgFor, NgIf } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @Component({
   standalone: true,
@@ -13,7 +14,8 @@ import { NgFor, NgIf } from '@angular/common';
   imports: [
     PokemonCardComponent,
     NgFor,
-    NgIf
+    NgIf,
+    RouterModule
   ]
 })
 export class SimplePokemonSliderComponent {

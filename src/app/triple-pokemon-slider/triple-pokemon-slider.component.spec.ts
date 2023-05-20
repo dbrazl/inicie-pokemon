@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { RouterTestingModule } from '@angular/router/testing';
 
 import { TriplePokemonSliderComponent } from './triple-pokemon-slider.component';
 
@@ -8,7 +9,10 @@ describe('TriplePokemonSliderComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [TriplePokemonSliderComponent]
+      imports: [
+        RouterTestingModule,
+        TriplePokemonSliderComponent
+      ]
     });
     fixture = TestBed.createComponent(TriplePokemonSliderComponent);
     component = fixture.componentInstance;

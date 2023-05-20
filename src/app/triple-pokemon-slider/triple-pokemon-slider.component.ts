@@ -3,6 +3,7 @@ import { PokemonCardComponent } from '../pokemon-card/pokemon-card.component';
 import { NgFor } from '@angular/common';
 import { TOP_10_POKEMONS } from 'src/mocks/top10Pokemons';
 import { IPokemon } from 'src/models/Pokemon';
+import { RouterModule } from '@angular/router';
 
 @Component({
   standalone: true,
@@ -10,7 +11,11 @@ import { IPokemon } from 'src/models/Pokemon';
   templateUrl: './triple-pokemon-slider.component.html',
   styleUrls: ['./triple-pokemon-slider.component.css'],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  imports: [PokemonCardComponent, NgFor]
+  imports: [
+    PokemonCardComponent,
+    NgFor,
+    RouterModule
+  ]
 })
 export class TriplePokemonSliderComponent {
   @ViewChild('swiperContainer') swiperContainer?: any;
