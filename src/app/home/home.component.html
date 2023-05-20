@@ -1,0 +1,37 @@
+<header class="header">
+  <img id="logo" src="assets/logo.png" alt="logo" class="logo" />
+</header>
+
+<main class="content">
+  <section class="explore-pokemons">
+    <div class="text-container">
+      <h1 id="title" class="title">Explore o mundo dos <span>Pokémons</span></h1>
+      <span id="description" class="description">Descubra todas as espécies de Pokémons</span>
+      <app-search-input id="search-input" class="search-input"></app-search-input>
+    </div>
+
+    <div class="list-container">
+      <img src="assets/laptop-banner.png" alt="Explore os pokemons" id="laptop-banner" class="laptop-banner">
+
+      <div class="desktop-pokemons-slider-container">
+        <app-triple-pokemon-slider id="pokemon-slider"></app-triple-pokemon-slider>
+      </div>
+
+      <div class="mobile-pokemons-slider-container">
+        <app-simple-pokemon-slider id="pokemon-slider" [animate]="true"></app-simple-pokemon-slider>
+      </div>
+    </div>
+  </section>
+
+  <section class="most-wanted">
+
+    <div class="mobile-most-wanted-list-container">
+      <h2 class="subtitle">Mais procurados</h2>
+      <app-simple-pokemon-slider id="pokemon-slider"></app-simple-pokemon-slider>
+    </div>
+
+    <div class="desktop-most-wanted-list-container">
+      <app-pokemon-list-slider></app-pokemon-list-slider>
+    </div>
+  </section>
+</main>

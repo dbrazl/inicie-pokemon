@@ -10,6 +10,7 @@ import { PokemonListSliderComponent } from './pokemon-list-slider/pokemon-list-s
 import { PokemonComponent } from './pokemon/pokemon.component';
 
 import { register } from 'swiper/element/bundle';
+import { HomeComponent } from './home/home.component';
 register();
 
 @NgModule({
@@ -17,6 +18,7 @@ register();
     AppComponent,
     SearchInputComponent,
     PokemonComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
