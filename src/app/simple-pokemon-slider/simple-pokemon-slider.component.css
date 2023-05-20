@@ -7,8 +7,6 @@ swiper-container {
 }
 
 swiper-slide {
-  opacity: 0;
-  transition: opacity 200ms ease;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -20,25 +18,8 @@ swiper-slide img {
   width: 100%;
 }
 
-swiper-slide button {
-  display: none;
-}
-
 .slide {
   position: relative;
-}
-
-.swiper-slide-active {
-  opacity: 1;
-}
-
-.swiper-slide-active button {
-  display: block;
-}
-
-.swiper-slide-prev,
-.swiper-slide-next {
-  opacity: 0.5;
 }
 
 .button {
