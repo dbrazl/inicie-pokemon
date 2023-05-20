@@ -1,4 +1,4 @@
-import { CUSTOM_ELEMENTS_SCHEMA, Component, OnInit } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, Component, ViewChild } from '@angular/core';
 import { PokemonCardComponent } from '../pokemon-card/pokemon-card.component';
 import { NgFor } from '@angular/common';
 import { TOP_10_POKEMONS } from 'src/mocks/top10Pokemons';
@@ -12,19 +12,15 @@ import { IPokemon } from 'src/models/Pokemon';
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [PokemonCardComponent, NgFor]
 })
-export class TriplePokemonSliderComponent implements OnInit {
-  swiperContainer: any;
+export class TriplePokemonSliderComponent {
+  @ViewChild('swiperContainer') swiperContainer?: any;
   pokemons: IPokemon[] = TOP_10_POKEMONS;
 
-  ngOnInit(): void {
-    this.swiperContainer = document.querySelector('swiper-container');
-  }
-
   nextSlide() {
-    this.swiperContainer?.swiper?.slideNext();
+    this.swiperContainer?.nativeElement?.swiper?.slideNext();
   }
 
   prevSlide() {
-    this.swiperContainer?.swiper?.slidePrev();
+    this.swiperContainer?.nativeElement?.swiper?.slidePrev();
   }
 }
