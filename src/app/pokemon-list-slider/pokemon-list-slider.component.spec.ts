@@ -1,21 +1,21 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TriplePokemonSliderComponent } from './triple-pokemon-slider.component';
+import { PokemonListSliderComponent } from './pokemon-list-slider.component';
 
-describe('TriplePokemonSliderComponent', () => {
-  let component: TriplePokemonSliderComponent;
-  let fixture: ComponentFixture<TriplePokemonSliderComponent>;
+describe('PokemonListSliderComponent', () => {
+  let component: PokemonListSliderComponent;
+  let fixture: ComponentFixture<PokemonListSliderComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [TriplePokemonSliderComponent]
+      imports: [PokemonListSliderComponent]
     });
-    fixture = TestBed.createComponent(TriplePokemonSliderComponent);
+    fixture = TestBed.createComponent(PokemonListSliderComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
 
-  it('should create triple pokemon slider', () => {
+  it('should create pokemon list slider', () => {
     expect(component).toBeTruthy();
   });
 

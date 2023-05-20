@@ -1,0 +1,68 @@
+.container {
+  width: 100%;
+}
+
+swiper-container {
+  width: 100%;
+}
+
+swiper-slide {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+.slide {
+  position: relative;
+}
+
+.button {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  border-radius: 52%;
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.previous-button {
+  transform: rotate(-180deg);
+}
+
+.icon {
+  width: 11px;
+  height: 19px;
+  object-fit: contain;
+}
+
+.list-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px;
+  color: var(--blue-color-1);
+}
+
+.buttons-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}

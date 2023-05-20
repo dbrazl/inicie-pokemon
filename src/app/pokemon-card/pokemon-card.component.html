@@ -1,4 +1,4 @@
-<div class="card-container">
+<div [class]="alwaysSmall ? 'card-container always-small' : 'card-container'">
   <div class="row">
     <span id="name" class="name">{{ name }}</span>
     <span id="code" class="info code">#{{ code }}</span>

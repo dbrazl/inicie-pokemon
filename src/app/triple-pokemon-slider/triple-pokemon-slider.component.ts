@@ -1,4 +1,4 @@
-import { CUSTOM_ELEMENTS_SCHEMA, Component, Input, OnInit } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, Component, OnInit } from '@angular/core';
 import { PokemonCardComponent } from '../pokemon-card/pokemon-card.component';
 import { NgFor } from '@angular/common';
 import { TOP_10_POKEMONS } from 'src/mocks/top10Pokemons';

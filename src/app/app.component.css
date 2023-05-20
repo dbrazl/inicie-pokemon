@@ -4,7 +4,7 @@
   justify-content: center;
 }
 
-@media(min-width: 1024px) {
+@media(min-width: 1100px) {
   .header {
     justify-content: flex-start;
     padding-left: 105px;
@@ -18,7 +18,7 @@
   padding-right: 25px;
 }
 
-@media(min-width: 1024px) {
+@media(min-width: 1100px) {
   .logo {
     padding-right: 0;
   }
@@ -29,7 +29,7 @@
   padding: 0 32px;
 }
 
-@media(min-width: 1024px) {
+@media(min-width: 1100px) {
   .content {
     padding: 0 76px;
   }
@@ -42,7 +42,7 @@
   justify-content: flex-start;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1100px) {
   .explore-pokemons {
     flex-direction: row;
   }
@@ -55,7 +55,7 @@
   align-items: flex-start;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1100px) {
   .text-container {
     width: 450px;
   }
@@ -81,7 +81,7 @@
   color: var(--primary-color);
 }
 
-@media(min-width: 1024px) {
+@media(min-width: 1100px) {
   .title {
     width: 450px;
     font-size: 55px;
@@ -100,7 +100,7 @@
   margin-top: 10px;
 }
 
-@media(min-width: 1024px) {
+@media(min-width: 1100px) {
   .description {
     font-size: 25px;
     line-height: 30px;
@@ -113,7 +113,7 @@
   margin-top: 10px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1100px) {
   .search-input {
     margin-top: 31px;
   }
@@ -123,7 +123,7 @@
   display: none;
 }
 
-@media(min-width: 1024px) {
+@media(min-width: 1100px) {
   .laptop-banner {
     display: unset;
     width: 100%;
@@ -132,7 +132,7 @@
   }
 }
 
-@media(min-width: 1440px) {
+@media(min-width: 1360px) {
   .laptop-banner {
     display: none;
   }
@@ -142,7 +142,7 @@
   display: none;
 }
 
-@media(min-width: 1440px) {
+@media(min-width: 1360px) {
   .desktop-pokemons-slider-container {
     display: block;
     width: 838px;
@@ -155,7 +155,7 @@
   height: 328.5px;
 }
 
-@media(min-width: 1024px) {
+@media(min-width: 1100px) {
   .mobile-pokemons-slider-container {
     display: none;
   }
@@ -166,7 +166,7 @@
   flex-direction: column;
 }
 
-@media(min-width: 1024px) {
+@media(min-width: 1100px) {
   .most-wanted {
     margin-top: 38px;
   }
@@ -183,8 +183,24 @@
   margin-bottom: 10px;
 }
 
-@media(min-width: 1024px) {
-  .subtitle {
-    text-align: start;
+.mobile-most-wanted-list-container {
+  width: 100%;
+  height: 328.5px;
+}
+
+@media(min-width: 1100px) {
+  .mobile-most-wanted-list-container {
+    display: none;
+  }
+}
+
+.desktop-most-wanted-list-container {
+  display: none;
+}
+
+@media(min-width: 1100px) {
+  .desktop-most-wanted-list-container {
+    width: 100%;
+    display: block;
   }
 }

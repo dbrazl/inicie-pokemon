@@ -1,0 +1,62 @@
+<div class="list-header">
+  <h2 class="subtitle">Mais procurados</h2>
+
+  <div class="buttons-wrapper">
+    <button id="previous-button" class="button previous-button" (click)="prevSlide()">
+      <img src="assets/arrow.svg" alt="Pokemon anterior" class="icon">
+    </button>
+
+    <button id="next-button" class="button" (click)="nextSlide()">
+      <img src="assets/arrow.svg" alt="Próximo Pokemon" class="icon">
+    </button>
+  </div>
+</div>
+
+<div class="container">
+  <swiper-container
+    *ngIf="!isDesktop"
+    #swiperContainer
+    class="mySwiper"
+    pagination="false"
+    grab-cursor="true"
+    slides-per-view="4"
+    initial-slide="0"
+  >
+    <swiper-slide id="pokemon" *ngFor="let pokemon of pokemons">
+      <div class="slide">
+        <app-pokemon-card
+          [name]="pokemon.name"
+          [code]="pokemon.code"
+          [image]="pokemon.image"
+          [height]="pokemon.height"
+          [weight]="pokemon.weight"
+          [alwaysSmall]="true"
+        ></app-pokemon-card>
+      </div>
+    </swiper-slide>
+  </swiper-container>
+
+  <swiper-container
+    *ngIf="isDesktop"
+    #swiperContainer
+    class="mySwiper"
+    pagination="false"
+    grab-cursor="true"
+    slides-per-view="5"
+    initial-slide="0"
+  >
+    <swiper-slide id="pokemon" *ngFor="let pokemon of pokemons">
+      <div class="slide">
+        <app-pokemon-card
+          [name]="pokemon.name"
+          [code]="pokemon.code"
+          [image]="pokemon.image"
+          [height]="pokemon.height"
+          [weight]="pokemon.weight"
+          [alwaysSmall]="true"
+        ></app-pokemon-card>
+      </div>
+    </swiper-slide>
+  </swiper-container>
+</div>
+

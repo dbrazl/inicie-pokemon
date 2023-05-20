@@ -8,6 +8,7 @@ import { TriplePokemonSliderComponent } from './triple-pokemon-slider/triple-pok
 
 import { register } from 'swiper/element/bundle';
 import { SimplePokemonSliderComponent } from './simple-pokemon-slider/simple-pokemon-slider.component';
+import { PokemonListSliderComponent } from './pokemon-list-slider/pokemon-list-slider.component';
 register();
 
 @NgModule({
@@ -20,6 +21,7 @@ register();
     AppRoutingModule,
     TriplePokemonSliderComponent,
     SimplePokemonSliderComponent,
+    PokemonListSliderComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]

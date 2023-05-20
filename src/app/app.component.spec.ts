@@ -4,6 +4,8 @@ import { AppComponent } from './app.component';
 import { SearchInputComponent } from './search-input/search-input.component';
 import { PokemonCardComponent } from './pokemon-card/pokemon-card.component';
 import { TriplePokemonSliderComponent } from './triple-pokemon-slider/triple-pokemon-slider.component';
+import { PokemonListSliderComponent } from './pokemon-list-slider/pokemon-list-slider.component';
+import { SimplePokemonSliderComponent } from './simple-pokemon-slider/simple-pokemon-slider.component';
 
 describe('HomeComponent', () => {
   let component: AppComponent;
@@ -14,7 +16,9 @@ describe('HomeComponent', () => {
       imports: [
         RouterTestingModule,
         PokemonCardComponent,
-        TriplePokemonSliderComponent
+        TriplePokemonSliderComponent,
+        SimplePokemonSliderComponent,
+        PokemonListSliderComponent,
       ],
       declarations: [
         AppComponent,

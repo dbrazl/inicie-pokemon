@@ -12,4 +12,5 @@ export class PokemonCardComponent {
   @Input() image = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png';
   @Input() height = 110;
   @Input() weight = 19;
+  @Input() alwaysSmall = false;
 }
