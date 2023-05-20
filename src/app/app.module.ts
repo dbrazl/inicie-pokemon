@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SearchInputComponent } from './search-input/search-input.component';
-import { PokemonCardComponent } from './pokemon-card/pokemon-card.component';
 import { TriplePokemonSliderComponent } from './triple-pokemon-slider/triple-pokemon-slider.component';
 
 import { register } from 'swiper/element/bundle';
@@ -20,7 +19,6 @@ register();
     BrowserModule,
     AppRoutingModule,
     TriplePokemonSliderComponent,
-    PokemonCardComponent,
     SimplePokemonSliderComponent,
   ],
   providers: [],

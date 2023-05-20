@@ -1,8 +1,8 @@
-import { CUSTOM_ELEMENTS_SCHEMA, Component } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, Component, Input } from '@angular/core';
 import { TOP_10_POKEMONS } from 'src/mocks/top10Pokemons';
 import { IPokemon } from 'src/models/Pokemon';
 import { PokemonCardComponent } from '../pokemon-card/pokemon-card.component';
-import { NgFor } from '@angular/common';
+import { NgFor, NgIf } from '@angular/common';
 
 @Component({
   standalone: true,
@@ -10,11 +10,16 @@ import { NgFor } from '@angular/common';
   templateUrl: './simple-pokemon-slider.component.html',
   styleUrls: ['./simple-pokemon-slider.component.css'],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  imports: [PokemonCardComponent, NgFor]
+  imports: [
+    PokemonCardComponent,
+    NgFor,
+    NgIf
+  ]
 })
 export class SimplePokemonSliderComponent {
   swiperContainer: any;
   pokemons: IPokemon[] = TOP_10_POKEMONS;
+  @Input() animate: boolean = false;
 
   ngOnInit(): void {
     this.swiperContainer = document.querySelector('swiper-container');
