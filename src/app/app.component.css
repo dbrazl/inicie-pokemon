@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@media(min-width: 1100px) {
+  .header {
+    justify-content: flex-start;
+    padding-left: 105px;
+  }
+}
+
+.logo {
+  width: 110px;
+  object-fit: contain;
+  margin-top: 30px;
+  padding-right: 25px;
+}
+
+@media(min-width: 1100px) {
+  .logo {
+    padding-right: 0;
+  }
+}

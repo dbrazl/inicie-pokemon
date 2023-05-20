@@ -23,4 +23,8 @@ describe('AppComponent', () => {
     expect(component).toBeTruthy();
   });
 
+  it('should have a logo', () => {
+    const logo: HTMLImageElement = fixture.nativeElement.querySelector('img#logo');
+    expect(logo).toBeTruthy();
+  });
 });

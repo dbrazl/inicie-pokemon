@@ -33,11 +33,6 @@ describe('HomeComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should have a logo', () => {
-    const logo: HTMLImageElement = fixture.nativeElement.querySelector('img#logo');
-    expect(logo).toBeTruthy();
-  });
-
   it('should have a title', () => {
     const title: HTMLTitleElement = fixture.nativeElement.querySelector('h1#title');
     expect(title).toBeTruthy();
