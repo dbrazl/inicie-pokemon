@@ -1,6 +1,7 @@
 <div class="container">
   <swiper-container
     *ngIf="animate"
+    #swiperContainer
     class="mySwiper"
     pagination="false"
     grab-cursor="true"
@@ -32,6 +33,7 @@
 
   <swiper-container
     *ngIf="!animate"
+    #swiperContainer
     class="mySwiper"
     pagination="false"
     grab-cursor="true"
