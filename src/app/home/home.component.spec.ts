@@ -64,4 +64,14 @@ describe('HomeComponent', () => {
     const laptopBanner: HTMLImageElement = fixture.nativeElement.querySelector('#laptop-banner');
     expect(laptopBanner).toBeTruthy();
   })
+
+  it('should have a most wanted pokemon list', () => {
+      const section: HTMLElement = fixture.nativeElement.querySelector('#most-wanted');
+      const subtitle: HTMLTitleElement = fixture.nativeElement.querySelector('#subtitle');
+      const pokemons: HTMLElement = fixture.nativeElement.querySelector('#most-wanted-pokemon-list');
+      expect(section).toBeTruthy();
+      expect(subtitle).toBeTruthy();
+      expect(subtitle.textContent).toEqual('Mais procurados');
+      expect(pokemons).toBeTruthy();
+  })
 });
