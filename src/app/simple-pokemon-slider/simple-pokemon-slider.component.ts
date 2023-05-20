@@ -22,10 +22,10 @@ export class SimplePokemonSliderComponent {
   @Input() animate: boolean = false;
 
   nextSlide() {
-    this.swiperContainer?.swiper?.slideNext();
+    this.swiperContainer?.nativeElement?.swiper?.slideNext();
   }
 
   prevSlide() {
-    this.swiperContainer?.swiper?.slidePrev();
+    this.swiperContainer?.nativeElement?.swiper?.slidePrev();
   }
 }
