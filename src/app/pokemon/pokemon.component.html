@@ -1,15 +1,50 @@
 <main class="content">
-  <h1 id="name" class="name">Charmeleon</h1>
+  <section class="main-infos-wrapper">
+    <h1 id="name" class="name">Charmeleon</h1>
+    <div class="poke-info-wrapper">
+      <div class="row">
+        <span class="label">Cod:</span>
+        <span id="code" class="label">#{{ id }}</span>
+      </div>
+      <div class="row">
+        <span class="label">Tipo:</span>
+        <app-pokemon-type type="fire"></app-pokemon-type>
+      </div>
+    </div>
+  </section>
 
-  <div class="main-infos">
-    <div class="row">
-      <span class="label">Cod:</span>
-      <span id="code" class="label">#34</span>
+  <section class="pokemon-image-wrapper">
+    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/5.png" alt="Charmeleon" id="pokemon-image" class="pokemon-image">
+  </section>
+
+  <section class="description-wrapper">
+    <h2 class="description-label">Descrição</h2>
+    <p id="description" class="description">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum rem cupiditate necessitatibus vel, commodi provident dignissimos dolore distinctio odit quis incidunt dolorem architecto iste mollitia quod quas aliquam consectetur? Enim."</p>
+  </section>
+
+  <section id="status" class="status-wrapper">
+    <div class="status-row">
+      <span class="label">Vida</span>
+      <app-progress-bar id="health" progress="70%" color="var(--health-color)"></app-progress-bar>
     </div>
 
-    <div class="row">
-      <span class="label">Tipo:</span>
-      <app-pokemon-type></app-pokemon-type>
+    <div class="status-row">
+      <span class="label">Defesa</span>
+      <app-progress-bar id="defense" progress="70%" color="var(--defense-color)"></app-progress-bar>
     </div>
-  </div>
+
+    <div class="status-row">
+      <span class="label">Velocidade</span>
+      <app-progress-bar id="velocity" progress="70%" color="var(--velocity-color)"></app-progress-bar>
+    </div>
+
+    <div class="status-row">
+      <span class="label">Ataque</span>
+      <app-progress-bar id="atack" progress="70%" color="var(--atack-color)"></app-progress-bar>
+    </div>
+  </section>
+
+  <section class="most-wanted-wrapper">
+    <app-most-wanted-pokemons id="most-wanted-pokemon-list"></app-most-wanted-pokemons>
+  </section>
 </main>

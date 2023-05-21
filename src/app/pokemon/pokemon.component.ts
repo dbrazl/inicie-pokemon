@@ -1,5 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { IPokemon } from 'src/models/Pokemon';
 
 
 @Component({
@@ -13,6 +14,8 @@ export class PokemonComponent implements OnInit {
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit(): void {
-    this.id = +(this.route.snapshot.paramMap.get("id") ?? 0);
+    this.route.paramMap.subscribe(params => {
+      this.id = +(params.get('id') ?? 0);
+    });
   }
 }

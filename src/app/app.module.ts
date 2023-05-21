@@ -12,6 +12,8 @@ import { PokemonComponent } from './pokemon/pokemon.component';
 import { register } from 'swiper/element/bundle';
 import { HomeComponent } from './home/home.component';
 import { PokemonTypeComponent } from './pokemon-type/pokemon-type.component';
+import { ProgressBarComponent } from './progress-bar/progress-bar.component';
+import { MostWantedPokemonsComponent } from './most-wanted-pokemons/most-wanted-pokemons.component';
 register();
 
 @NgModule({
@@ -21,6 +23,8 @@ register();
     PokemonComponent,
     HomeComponent,
     PokemonTypeComponent,
+    ProgressBarComponent,
+    MostWantedPokemonsComponent,
   ],
   imports: [
     BrowserModule,

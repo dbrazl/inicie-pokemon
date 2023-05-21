@@ -20,12 +20,14 @@
   --blue-color-3: #1D267D;
   --blue-color-4: #19A7CE;
   --blue-color-5: #AEE2FF;
+  --blue-color-6: #49D0B0;
   --orange: #F7802A;
   --brown: #A4907C;
   --red: #F45050;
   --green-1: #A4D0A4;
   --green-2: #617143;
   --green-3: #539165;
+  --green-4: #C4F789;
   --purple-1: #A459D1;
   --purple-2: #5C469C;
   --purple-3: #635985;
@@ -65,6 +67,11 @@
   --type-dark-color: var(--dark);
   --type-fairy-color: var(--pink);
   --type-shadow-color: var(--blue-color-3);
+
+  --health-color: var(--green-4);
+  --defense-color: var(--orange);
+  --velocity-color: var(--blue-color-6);
+  --atack-color: var(--primary-color);
 }
 
 body {

@@ -2,6 +2,11 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 
 import { PokemonComponent } from './pokemon.component';
+import { PokemonTypeComponent } from '../pokemon-type/pokemon-type.component';
+import { ProgressBarComponent } from '../progress-bar/progress-bar.component';
+import { MostWantedPokemonsComponent } from '../most-wanted-pokemons/most-wanted-pokemons.component';
+import { SimplePokemonSliderComponent } from '../simple-pokemon-slider/simple-pokemon-slider.component';
+import { PokemonListSliderComponent } from '../pokemon-list-slider/pokemon-list-slider.component';
 
 describe('PokemonComponent', () => {
   let component: PokemonComponent;
@@ -9,8 +14,17 @@ describe('PokemonComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [PokemonComponent],
-      imports: [RouterTestingModule]
+      declarations: [
+        PokemonComponent,
+        PokemonTypeComponent,
+        ProgressBarComponent,
+        MostWantedPokemonsComponent
+      ],
+      imports: [
+        RouterTestingModule,
+        SimplePokemonSliderComponent,
+        PokemonListSliderComponent
+      ]
     });
     fixture = TestBed.createComponent(PokemonComponent);
     component = fixture.componentInstance;
@@ -42,13 +56,21 @@ describe('PokemonComponent', () => {
   });
 
   it('should have the pokemon description', () => {
-    const description: HTMLImageElement = fixture.nativeElement.querySelector('#description');
+    const description: HTMLParagraphElement = fixture.nativeElement.querySelector('#description');
     expect(description).toBeTruthy();
   });
 
   it('should have the pokemon status', () => {
     const status: HTMLDivElement = fixture.nativeElement.querySelector('#status');
+    const health: HTMLElement = fixture.nativeElement.querySelector('#health');
+    const defense: HTMLElement = fixture.nativeElement.querySelector('#defense');
+    const velocity: HTMLElement = fixture.nativeElement.querySelector('#velocity');
+    const atack: HTMLElement = fixture.nativeElement.querySelector('#atack');
     expect(status).toBeTruthy();
+    expect(health).toBeTruthy();
+    expect(defense).toBeTruthy();
+    expect(velocity).toBeTruthy();
+    expect(atack).toBeTruthy();
   });
 
   it('should have the pokemon most wanted list', () => {

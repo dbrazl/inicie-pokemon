@@ -6,6 +6,7 @@ import { PokemonCardComponent } from '../pokemon-card/pokemon-card.component';
 import { TriplePokemonSliderComponent } from '../triple-pokemon-slider/triple-pokemon-slider.component';
 import { PokemonListSliderComponent } from '../pokemon-list-slider/pokemon-list-slider.component';
 import { SimplePokemonSliderComponent } from '../simple-pokemon-slider/simple-pokemon-slider.component';
+import { MostWantedPokemonsComponent } from '../most-wanted-pokemons/most-wanted-pokemons.component';
 
 describe('HomeComponent', () => {
   let component: HomeComponent;
@@ -23,6 +24,7 @@ describe('HomeComponent', () => {
       declarations: [
         HomeComponent,
         SearchInputComponent,
+        MostWantedPokemonsComponent
       ],
     });
     fixture = TestBed.createComponent(HomeComponent);
@@ -61,12 +63,7 @@ describe('HomeComponent', () => {
   })
 
   it('should have a most wanted pokemon list', () => {
-      const section: HTMLElement = fixture.nativeElement.querySelector('#most-wanted');
-      const subtitle: HTMLTitleElement = fixture.nativeElement.querySelector('#subtitle');
-      const pokemons: HTMLElement = fixture.nativeElement.querySelector('#most-wanted-pokemon-list');
-      expect(section).toBeTruthy();
-      expect(subtitle).toBeTruthy();
-      expect(subtitle.textContent).toEqual('Mais procurados');
-      expect(pokemons).toBeTruthy();
+    const section: HTMLElement = fixture.nativeElement.querySelector('#most-wanted');
+    expect(section).toBeTruthy();
   })
 });
