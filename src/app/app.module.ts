@@ -11,6 +11,7 @@ import { PokemonComponent } from './pokemon/pokemon.component';
 
 import { register } from 'swiper/element/bundle';
 import { HomeComponent } from './home/home.component';
+import { PokemonTypeComponent } from './pokemon-type/pokemon-type.component';
 register();
 
 @NgModule({
@@ -19,6 +20,7 @@ register();
     SearchInputComponent,
     PokemonComponent,
     HomeComponent,
+    PokemonTypeComponent,
   ],
   imports: [
     BrowserModule,

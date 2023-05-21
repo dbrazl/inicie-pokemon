@@ -11,9 +11,28 @@
   --white-1: #ffffff;
   --white-2: #F8F8F8;
   --black: #000000;
-  --grey: #9BA4B5;
+  --grey-1: #9BA4B5;
+  --grey-2: #DBDFEA;
+  --grey-3: #D2E9E9;
+  --grey-4: #E3F4F4;
   --blue-color-1: #2F3E77;
   --blue-color-2: #233674;
+  --blue-color-3: #1D267D;
+  --blue-color-4: #19A7CE;
+  --blue-color-5: #AEE2FF;
+  --orange: #F7802A;
+  --brown: #A4907C;
+  --red: #F45050;
+  --green-1: #A4D0A4;
+  --green-2: #617143;
+  --green-3: #539165;
+  --purple-1: #A459D1;
+  --purple-2: #5C469C;
+  --purple-3: #635985;
+  --yellow: #F7DB6A;
+  --peach: #FFD3B0;
+  --dark: #27374D;
+  --pink: #FFB4B4;
   --primary-color: #EA686D;
 
   --input-bg-color: var(--white-1);
@@ -25,6 +44,27 @@
   --pokemon-title-color: var(--blue-color-2);
   --pokemon-info-color: var(--blue-color-2);
   --pokemon-label-color: var(--blue-color-2);
+
+  --type-unkown-color: var(--grey-1);
+  --type-normal-color: var(--brown);
+  --type-fighting-color: var(--red);
+  --type-flying-color: var(--grey-2);
+  --type-poison-color: var(--green-1);
+  --type-ground-color: var(--green-2);
+  --type-rock-color: var(--grey-3);
+  --type-bug-color: var(--purple-1);
+  --type-ghost-color: var(--purple-2);
+  --type-steel-color: var(--grey-4);
+  --type-fire-color: var(--orange);
+  --type-water-color: var(--blue-color-4);
+  --type-grass-color: var(--green-3);
+  --type-electric-color: var(--yellow);
+  --type-psychic-color: var(--purple-3);
+  --type-ice-color: var(--blue-color-5);
+  --type-dragon-color: var(--peach);
+  --type-dark-color: var(--dark);
+  --type-fairy-color: var(--pink);
+  --type-shadow-color: var(--blue-color-3);
 }
 
 body {
