@@ -73,6 +73,7 @@
   line-height: 34px;
   color: var(--blue-color-1);
   margin-top: 10px;
+  text-transform: capitalize;
 }
 
 @media(min-width: 1100px) {
@@ -147,6 +148,27 @@
   font-size: 22px;
   line-height: 30px;
   color: var(--blue-color-2);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.description-badget {
+  width: 22px;
+  height: 20px;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: var(--white-1);
+  border-radius: 2px;
+  background-color: var(--blue-color-2);
 }
 
 @media(min-width: 1100px) {

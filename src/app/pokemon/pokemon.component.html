@@ -1,46 +1,49 @@
 <main class="content">
   <section class="main-infos-wrapper">
-    <h1 id="name" class="name">Charmeleon</h1>
+    <h1 id="name" class="name">{{ pokemon.name }}</h1>
     <div class="poke-info-wrapper">
       <div class="row">
         <span class="label">Cod:</span>
-        <span id="code" class="label">#{{ id }}</span>
+        <span id="code" class="label">#{{ pokemon.code }}</span>
       </div>
       <div class="row">
         <span class="label">Tipo:</span>
-        <app-pokemon-type type="fire"></app-pokemon-type>
+        <app-pokemon-type *ngFor="let type of pokemon.types" [type]="type"></app-pokemon-type>
       </div>
     </div>
   </section>
 
   <section class="pokemon-image-wrapper">
-    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/5.png" alt="Charmeleon" id="pokemon-image" class="pokemon-image">
+    <img [src]="pokemon.image" [alt]="pokemon.name" id="pokemon-image" class="pokemon-image">
   </section>
 
   <section class="description-wrapper">
-    <h2 class="description-label">Descrição</h2>
-    <p id="description" class="description">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum rem cupiditate necessitatibus vel, commodi provident dignissimos dolore distinctio odit quis incidunt dolorem architecto iste mollitia quod quas aliquam consectetur? Enim."</p>
+    <h2 class="description-label">
+      Descrição
+      <span class="description-badget">EN</span>
+    </h2>
+    <p id="description" class="description">"{{ pokemon.description }}"</p>
   </section>
 
   <section id="status" class="status-wrapper">
     <div class="status-row">
       <span class="label">Vida</span>
-      <app-progress-bar id="health" progress="70%" color="var(--health-color)"></app-progress-bar>
+      <app-progress-bar id="health" [progress]="(pokemon.stats.health / 255) * 100 + '%'" color="var(--health-color)"></app-progress-bar>
     </div>
 
     <div class="status-row">
       <span class="label">Defesa</span>
-      <app-progress-bar id="defense" progress="70%" color="var(--defense-color)"></app-progress-bar>
+      <app-progress-bar id="defense" [progress]="(pokemon.stats.defense / 255) * 100 + '%'" color="var(--defense-color)"></app-progress-bar>
     </div>
 
     <div class="status-row">
       <span class="label">Velocidade</span>
-      <app-progress-bar id="velocity" progress="70%" color="var(--velocity-color)"></app-progress-bar>
+      <app-progress-bar id="velocity" [progress]="(pokemon.stats.speed / 255) * 100 + '%'" color="var(--velocity-color)"></app-progress-bar>
     </div>
 
     <div class="status-row">
       <span class="label">Ataque</span>
-      <app-progress-bar id="atack" progress="70%" color="var(--atack-color)"></app-progress-bar>
+      <app-progress-bar id="atack" [progress]="(pokemon.stats.attack / 255) * 100 + '%'" color="var(--atack-color)"></app-progress-bar>
     </div>
   </section>
 
