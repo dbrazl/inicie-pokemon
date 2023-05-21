@@ -9,10 +9,10 @@ export const DEFAULT_POKEMON: IPokemon = {
   weight: 90.5,
   types: ['fire', 'dragon'],
   stats: {
-    health: 78,
-    defense: 78,
-    speed: 100,
-    attack: 84
+    health: 0,
+    defense: 0,
+    speed: 0,
+    attack: 0
   }
 };
 

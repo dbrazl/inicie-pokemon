@@ -23,7 +23,7 @@ describe('PokemonComponent', () => {
       imports: [
         RouterTestingModule,
         SimplePokemonSliderComponent,
-        PokemonListSliderComponent
+        PokemonListSliderComponent,
       ]
     });
     fixture = TestBed.createComponent(PokemonComponent);
