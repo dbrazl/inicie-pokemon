@@ -15,7 +15,28 @@ describe('NotFoundComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create Not Found Component', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should have a image', () => {
+    const image: HTMLImageElement = fixture.nativeElement.querySelector('#image');
+    expect(image).toBeTruthy();
+  });
+
+  it('should have a title', () => {
+    const title: HTMLTitleElement = fixture.nativeElement.querySelector('#title');
+    expect(title).toBeTruthy();
+  });
+
+  it('should have a message', () => {
+    const message: HTMLSpanElement = fixture.nativeElement.querySelector('#message');
+    expect(message).toBeTruthy();
+  });
+
+  it('should have a back button', () => {
+    const button: HTMLAnchorElement = fixture.nativeElement.querySelector('#button');
+    expect(button).toBeTruthy();
+    expect(button.textContent).toEqual('Voltar');
   });
 });
