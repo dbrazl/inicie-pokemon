@@ -11,9 +11,9 @@ Projeto teste para a vaga de Desenvolvedor Front-end Sênior da Inicie Educaçã
 Para iniciar o projeto, você deve:
 
 - Clonar o projeto;
-- Instalar os pacotes com o seu gerenciador de pacotes favorito (Ex: yarn, rnpm ou npm)
-- Executar o script de iniciação com o seu gerenciador de pacote
-- E acessar URL do servidor local
+- Instalar os pacotes com o seu gerenciador de pacotes favorito (Ex: yarn, rnpm ou npm);
+- Executar o script de iniciação com o seu gerenciador de pacote;
+- E acessar URL do servidor local.
 
 #### Exemplo:
 
@@ -44,9 +44,11 @@ yarn start
 Para iniciar o projeto, você deve:
 
 - Clonar o projeto;
-- Criar imagem da aplicação no Docker
-- Inicializar um container com a imagem criada
-- E acessar URL do servidor local
+- Instalar os pacotes com o seu gerenciador de pacotes favorito (Ex: yarn, rnpm ou npm);
+- Buildar o projeto;
+- Criar imagem da aplicação no Docker;
+- Inicializar um container com a imagem criada;
+- E acessar URL do servidor local;
 
 #### Exemplo:
 
@@ -54,6 +56,18 @@ Para iniciar o projeto, você deve:
 
 ```cmd 
 git clone git@github.com:dbrazl/inicie-pokemon.git
+```
+
+##### Instalando pacotes
+
+```cmd
+yarn
+```
+
+##### Buildando a aplicação
+
+```cmd 
+yarn build
 ```
 
 ##### Criando imagem da aplicação
