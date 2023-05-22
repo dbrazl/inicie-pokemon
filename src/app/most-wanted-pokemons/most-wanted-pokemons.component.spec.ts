@@ -1,6 +1,9 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { MostWantedPokemonsComponent } from './most-wanted-pokemons.component';
+import { SimplePokemonSliderComponent } from '../simple-pokemon-slider/simple-pokemon-slider.component';
+import { PokemonListSliderComponent } from '../pokemon-list-slider/pokemon-list-slider.component';
+import { RouterTestingModule } from '@angular/router/testing';
 
 describe('MostWantedPokemonsComponent', () => {
   let component: MostWantedPokemonsComponent;
@@ -8,7 +11,12 @@ describe('MostWantedPokemonsComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [MostWantedPokemonsComponent]
+      declarations: [MostWantedPokemonsComponent],
+      imports: [
+        SimplePokemonSliderComponent,
+        PokemonListSliderComponent,
+        RouterTestingModule
+      ]
     });
     fixture = TestBed.createComponent(MostWantedPokemonsComponent);
     component = fixture.componentInstance;
