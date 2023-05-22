@@ -6,6 +6,8 @@ Projeto teste para a vaga de Desenvolvedor Front-end Sênior da Inicie Educaçã
 
 ## Iniciar o projeto
 
+### Local sem docker
+
 Para iniciar o projeto, você deve:
 
 - Clonar o projeto;
@@ -36,6 +38,40 @@ yarn start
 ##### Acessando a URL do servidor local
 
 ![Log do servidor web](https://github.com/dbrazl/inicie-pokemon/assets/52254578/800abcbc-f390-416f-b8cd-2560f54b463f)
+
+### Local com docker
+
+Para iniciar o projeto, você deve:
+
+- Clonar o projeto;
+- Criar imagem da aplicação no Docker
+- Inicializar um container com a imagem criada
+- E acessar URL do servidor local
+
+#### Exemplo:
+
+##### Clonando
+
+```cmd 
+git clone git@github.com:dbrazl/inicie-pokemon.git
+```
+
+##### Criando imagem da aplicação
+
+```cmd
+docker build -t inicie-pokemon .
+```
+
+##### Criando e executando container da aplicação
+
+```cmd
+docker run inicie-pokemon
+```
+
+##### Acessando a URL do servidor local
+
+![Log do servidor web](https://github.com/dbrazl/inicie-pokemon/assets/52254578/962a3a4f-cfaa-4323-95ec-009d88163898)
+
 
 ## Testes automatizados
 
