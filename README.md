@@ -77,6 +77,8 @@ yarn coverage
 
 A cobertura de testes é atualizada automaticamente ao ser incluso novos testes enquanto os testes automatizados estiverem rodando.
 
+**ATENÇÃO:** Foram realizados testes unitários com foco em implementação. Detalhes de implementações como funcionalidades foram deixados de lados para que os testes sejam manuteníveis.
+
 ## Contribuidores
 
 #### Desenvolvedor
