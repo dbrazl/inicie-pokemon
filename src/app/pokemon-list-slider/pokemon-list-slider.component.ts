@@ -1,4 +1,4 @@
-import { CUSTOM_ELEMENTS_SCHEMA, Component, OnInit, ViewChild } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, Component, Input, OnInit, ViewChild } from '@angular/core';
 import { PokemonCardComponent } from '../pokemon-card/pokemon-card.component';
 import { NgFor, NgIf } from '@angular/common';
 import { TOP_10_POKEMONS } from 'src/mocks/top10Pokemons';
@@ -20,6 +20,7 @@ import { RouterModule } from '@angular/router';
 })
 export class PokemonListSliderComponent implements OnInit {
   @ViewChild('swiperContainer') swiperContainer?: any;
+  @Input() loading?: boolean;
   pokemons: IPokemon[] = TOP_10_POKEMONS;
   isDesktop: boolean = window.innerWidth >= 1360;
 

@@ -22,6 +22,7 @@ export class SimplePokemonSliderComponent {
   @ViewChild('swiperContainer') swiperContainer?: any;
   pokemons: IPokemon[] = TOP_10_POKEMONS;
   @Input() animate: boolean = false;
+  @Input() loading?: boolean;
 
   nextSlide() {
     this.swiperContainer?.nativeElement?.swiper?.slideNext();

@@ -1,53 +1,53 @@
 <main class="content">
   <section class="main-infos-wrapper">
-    <h1 id="name" class="name">{{ pokemon.name }}</h1>
+    <h1 id="name" [class]="loading ? 'skeleton name' : 'name'">{{ pokemon.name }}</h1>
     <div class="poke-info-wrapper">
-      <div class="row">
+      <div [class]="loading ? 'skeleton row' : 'row'">
         <span class="label">Cod:</span>
         <span id="code" class="label">#{{ pokemon.code }}</span>
       </div>
-      <div class="row">
+      <div [class]="loading ? 'skeleton row' : 'row'">
         <span class="label">Tipo:</span>
         <app-pokemon-type *ngFor="let type of pokemon.types" [type]="type"></app-pokemon-type>
       </div>
     </div>
   </section>
 
-  <section class="pokemon-image-wrapper">
+  <section [class]="loading ? 'skeleton pokemon-image-wrapper' : 'pokemon-image-wrapper'">
     <img [src]="pokemon.image" [alt]="pokemon.name" id="pokemon-image" class="pokemon-image">
   </section>
 
   <section class="description-wrapper">
-    <h2 class="description-label">
+    <h2 [class]="loading ? 'skeleton description-label' : 'description-label'">
       Descrição
       <span class="description-badget">EN</span>
     </h2>
-    <p id="description" class="description">"{{ pokemon.description }}"</p>
+    <p id="description" [class]="loading ? 'skeleton description' : 'description'">"{{ pokemon.description }}"</p>
   </section>
 
   <section id="status" class="status-wrapper">
-    <div class="status-row">
+    <div [class]="loading ? 'skeleton status-row' : 'status-row'">
       <span class="label">Vida</span>
       <app-progress-bar id="health" [progress]="(pokemon.stats.health / 255) * 100 + '%'" color="var(--health-color)"></app-progress-bar>
     </div>
 
-    <div class="status-row">
+    <div [class]="loading ? 'skeleton status-row' : 'status-row'">
       <span class="label">Defesa</span>
       <app-progress-bar id="defense" [progress]="(pokemon.stats.defense / 255) * 100 + '%'" color="var(--defense-color)"></app-progress-bar>
     </div>
 
-    <div class="status-row">
+    <div [class]="loading ? 'skeleton status-row' : 'status-row'">
       <span class="label">Velocidade</span>
       <app-progress-bar id="velocity" [progress]="(pokemon.stats.speed / 255) * 100 + '%'" color="var(--velocity-color)"></app-progress-bar>
     </div>
 
-    <div class="status-row">
+    <div [class]="loading ? 'skeleton status-row' : 'status-row'">
       <span class="label">Ataque</span>
       <app-progress-bar id="atack" [progress]="(pokemon.stats.attack / 255) * 100 + '%'" color="var(--atack-color)"></app-progress-bar>
     </div>
   </section>
 
   <section class="most-wanted-wrapper">
-    <app-most-wanted-pokemons id="most-wanted-pokemon-list"></app-most-wanted-pokemons>
+    <app-most-wanted-pokemons id="most-wanted-pokemon-list" [loading]="loading"></app-most-wanted-pokemons>
   </section>
 </main>

@@ -1,7 +1,7 @@
 <div class="list-header">
-  <h2 id="subtitle" class="subtitle">Mais procurados</h2>
+  <h2 id="subtitle" [class]="loading ? 'skeleton subtitle' : 'subtitle'">Mais procurados</h2>
 
-  <div class="buttons-wrapper">
+  <div [class]="loading ? 'skeleton buttons-wrapper' : 'buttons-wrapper'">
     <button id="previous-button" class="button previous-button" (click)="prevSlide()">
       <img src="assets/arrow.svg" alt="Pokemon anterior" class="icon">
     </button>
@@ -23,7 +23,7 @@
     initial-slide="0"
   >
     <swiper-slide id="pokemon" *ngFor="let pokemon of pokemons">
-      <a [routerLink]="['/pokemon', pokemon.code]" class="slide">
+      <a [routerLink]="['/pokemon', pokemon.code]" [class]="loading ? 'skeleton slide' : 'slide'">
         <app-pokemon-card
           [name]="pokemon.name"
           [code]="pokemon.code"
@@ -46,7 +46,7 @@
     initial-slide="0"
   >
     <swiper-slide id="pokemon" *ngFor="let pokemon of pokemons">
-      <a [routerLink]="['/pokemon', pokemon.code]" class="slide">
+      <a [routerLink]="['/pokemon', pokemon.code]" [class]="loading ? 'skeleton slide' : 'slide'">
         <app-pokemon-card
           [name]="pokemon.name"
           [code]="pokemon.code"

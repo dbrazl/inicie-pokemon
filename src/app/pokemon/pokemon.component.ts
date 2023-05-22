@@ -12,6 +12,7 @@ import { api, endpoints } from 'src/services/pokemonAPI';
 })
 export class PokemonComponent implements OnInit {
   pokemon: IPokemon = DEFAULT_POKEMON;
+  loading: boolean = true;
 
   constructor(private route: ActivatedRoute) {}
 
@@ -67,6 +68,8 @@ export class PokemonComponent implements OnInit {
       }
     } catch (error) {
       return null;
+    } finally {
+      this.loading = false;
     }
   }
 
