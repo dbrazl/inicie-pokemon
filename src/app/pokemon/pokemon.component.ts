@@ -16,7 +16,7 @@ export class PokemonComponent implements OnInit {
 
   constructor(private route: ActivatedRoute) {}
 
-  async getPokemon(pokemonId: number): Promise<IPokemon | null> {
+  async getPokemon(pokemonId: string): Promise<IPokemon | null> {
     try {
       const responsePokemon = await api.get(endpoints.pokemon(pokemonId));
       const {
@@ -75,7 +75,7 @@ export class PokemonComponent implements OnInit {
 
   ngOnInit(): void {
     this.route.paramMap.subscribe(async params => {
-      const id = +(params.get('id') ?? 0);
+      const id = params.get('id') ?? '';
 
       const pokemon = await this.getPokemon(id);
 

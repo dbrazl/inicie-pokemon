@@ -5,6 +5,6 @@ export const api = axios.create({
 });
 
 export const endpoints = {
-  pokemon: (id: number) => `/pokemon/${id}`,
-  pokemonSpecies: (id: number) => `/pokemon-species/${id}`
+  pokemon: (id: string) => `/pokemon/${id}`,
+  pokemonSpecies: (id: string) => `/pokemon-species/${id}`
 };

@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ToastrModule } from 'ngx-toastr';
 
 import { SearchInputComponent } from './search-input.component';
 
@@ -8,7 +9,10 @@ describe('SearchInputComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [SearchInputComponent]
+      declarations: [SearchInputComponent],
+      imports: [
+        ToastrModule.forRoot()
+      ]
     });
     fixture = TestBed.createComponent(SearchInputComponent);
     component = fixture.componentInstance;

@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+@import 'ngx-toastr/toastr';
 
 * {
   border: 0;
@@ -23,7 +24,8 @@
   --blue-color-6: #49D0B0;
   --orange: #F7802A;
   --brown: #A4907C;
-  --red: #F45050;
+  --red-1: #F45050;
+  --red-2: #e74c3c;
   --green-1: #A4D0A4;
   --green-2: #617143;
   --green-3: #539165;
@@ -49,7 +51,7 @@
 
   --type-unkown-color: var(--grey-1);
   --type-normal-color: var(--brown);
-  --type-fighting-color: var(--red);
+  --type-fighting-color: var(--red-1);
   --type-flying-color: var(--grey-2);
   --type-poison-color: var(--green-1);
   --type-ground-color: var(--green-2);
@@ -85,3 +87,17 @@ body {
   }
 }
 
+.toast-error {
+  background-color: var(--red-2);
+}
+
+.toast-title,
+.toast-message {
+  font-family: 'Nunito';
+  font-style: normal;
+}
+
+.toast-progress {
+  background-color: #ffffff;
+  opacity: 0.5;
+}

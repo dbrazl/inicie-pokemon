@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgFor } from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
 
 import { SearchInputComponent } from './search-input/search-input.component';
 import { TriplePokemonSliderComponent } from './triple-pokemon-slider/triple-pokemon-slider.component';
@@ -34,7 +36,9 @@ register();
     TriplePokemonSliderComponent,
     SimplePokemonSliderComponent,
     PokemonListSliderComponent,
-    NgFor
+    NgFor,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
