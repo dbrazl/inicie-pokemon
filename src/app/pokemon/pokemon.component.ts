@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
+import { HTTP_STATUS } from 'src/config/httpStatus';
 import { DEFAULT_POKEMON } from 'src/mocks/defaultPokemon';
 import { IDescription, IPokemon, IPokemonStats, IPokemonType, LanguagesAvailables, PokemonStat } from 'src/models/Pokemon';
 import { api, endpoints } from 'src/services/pokemonAPI';
@@ -14,7 +15,10 @@ export class PokemonComponent implements OnInit {
   pokemon: IPokemon = DEFAULT_POKEMON;
   loading: boolean = true;
 
-  constructor(private route: ActivatedRoute) {}
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router
+  ) {}
 
   async getPokemon(pokemonId: string): Promise<IPokemon | null> {
     try {
@@ -67,6 +71,13 @@ export class PokemonComponent implements OnInit {
         }
       }
     } catch (error) {
+      const httpStatus: number = (error as any).response.status
+      if (httpStatus === HTTP_STATUS.NOT_FOUND) {
+        this.router.navigate(['/pokemon/desconhecido']);
+      } else {
+        this.router.navigate(['/']);
+      }
+
       return null;
     } finally {
       this.loading = false;

@@ -18,6 +18,7 @@ import { HomeComponent } from './home/home.component';
 import { PokemonTypeComponent } from './pokemon-type/pokemon-type.component';
 
 import { register } from 'swiper/element/bundle';
+import { NotFoundComponent } from './not-found/not-found.component';
 register();
 
 @NgModule({
@@ -29,6 +30,7 @@ register();
     PokemonTypeComponent,
     ProgressBarComponent,
     MostWantedPokemonsComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
